@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="恭喜张三、李四、王二、麻子等10万人，平均分得10万元奖金，欢迎前来领奖"
+        android:textSize="16sp" />
+
+    <com.zgf.marqueview.MarqueeView
+        android:id="@+id/marquee_view"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+
+    <com.zgf.marqueview.MarqueeLayout
+        android:id="@+id/marquee_layout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+
+    <com.zgf.marqueview.MarqueeLayout
+        android:id="@+id/marquee_layout2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#fa5b20"
+            android:textSize="16sp"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:textStyle="bold" />
+
+    </com.zgf.marqueview.MarqueeLayout>
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start" />
+
+</LinearLayout>
